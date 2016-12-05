@@ -1,0 +1,1 @@
+Dummy examples of the refactoring of Legacy Code into design patterns.

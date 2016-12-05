@@ -1,0 +1,58 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.smalaca.refactoring</groupId>
+  <artifactId>refactoring</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>refactoring</name>
+  <url>letstalkaboutjava.blogspot.com</url>
+
+  <properties>
+    <java.version>1.8</java.version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.build.directory>target</project.build.directory>
+    <project.config.directory>config</project.config.directory>
+
+    <!-- DEPENDENCIES' VERSIONS -->
+    <maven.compiler.version>3.3</maven.compiler.version>
+    <jbehave.version>3.8</jbehave.version>
+    <jbehave.spring.version>3.9.5</jbehave.spring.version>
+    <junit.version>4.11</junit.version>
+    <mockito.version>1.10.19</mockito.version>
+    <failsafe.and.surefire.version>2.16</failsafe.and.surefire.version>
+    <checkstyle.plugin.version>2.15</checkstyle.plugin.version>
+    <pmd.plugin.version>3.4</pmd.plugin.version>
+    <findbugs.plugin.version>3.0.1</findbugs.plugin.version>
+    <jacoco.version>0.7.4.201502262128</jacoco.version>
+    <javancss.version>2.1</javancss.version>
+    <classycle.version>0.4</classycle.version>
+    <httpmime.version>4.2.3</httpmime.version>
+    <assertj.core.version>3.1.0</assertj.core.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>${junit.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.assertj</groupId>
+      <artifactId>assertj-core</artifactId>
+      <version>${assertj.core.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-core</artifactId>
+      <version>${mockito.version}</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>
