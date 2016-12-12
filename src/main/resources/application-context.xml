@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	   					   http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="voidProcessorManager" class="com.smalaca.processors.VoidProcessorManager">
+        <constructor-arg>
+            <list>
+                <!-- order of the elements in the list is significant -->
+                <bean class="com.smalaca.processors.ConcreteProcessor1"/>
+                <bean class="com.smalaca.processors.ConcreteProcessor2"/>
+                <bean class="com.smalaca.processors.ConcreteProcessor3"/>
+            </list>
+        </constructor-arg>
+    </bean>
+
+</beans>
