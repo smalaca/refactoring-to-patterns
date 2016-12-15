@@ -24,7 +24,7 @@ class Account {
             return false;
         }
 
-        if (getMoney().sub(getBlocked()).empty()) {
+        if (getBlocked() != null || getMoney().sub(getBlocked()).empty()) {
             return false;
         }
 

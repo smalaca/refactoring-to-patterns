@@ -31,4 +31,8 @@ public class Client {
     List<String> getPhoneNumbers() {
         return phoneNumbers;
     }
+
+    public boolean isNewClient() {
+        return false;
+    }
 }

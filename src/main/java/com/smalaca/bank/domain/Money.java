@@ -18,4 +18,8 @@ public class Money {
     public boolean empty() {
         return false;
     }
+
+    public double getAmount() {
+        return amount;
+    }
 }
