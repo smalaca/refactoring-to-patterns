@@ -1,5 +1,7 @@
 package com.smalaca.bank.domain;
 
+import com.smalaca.bank.exception.UnsupportedOperationOnAccountException;
+
 class Account {
     private Money debit;
     private Money money;
@@ -34,6 +36,16 @@ class Account {
         }
 
         return true;
+    }
+
+    void doOperation(String operation, Money money) {
+        if ("withdraw".equals(operation)) {
+            money = getMoney().sub(money);
+        } else if ("deposit".equals(operation)) {
+            money = getMoney().add(money);
+        } else {
+            throw new UnsupportedOperationOnAccountException();
+        }
     }
 
     Money getDebit() {
