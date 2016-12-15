@@ -1,5 +1,7 @@
 package com.smalaca.bank.domain;
 
+import com.smalaca.bank.http.dto.ClientDto;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -34,5 +36,9 @@ public class Client {
 
     public boolean isNewClient() {
         return false;
+    }
+
+    public void update(ClientDto clientDto) {
+
     }
 }
