@@ -9,7 +9,7 @@ public class Client {
     private String city;
     private String street;
     private String houseNumber;
-    private List<String> phoneNumbers = new ArrayList<String>();
+    private List<String> phoneNumbers = new ArrayList<>();
 
     Client(String firstName, String lastName) {
         this.firstName = firstName;
@@ -22,18 +22,7 @@ public class Client {
         this.city = city;
     }
 
-    void addPhoneNumber(String phoneNumber) {
-        phoneNumbers.add(phoneNumber);
-    }
-
-    void changePhoneNumber(String oldPhoneNumber, String newPhoneNumber) {
-        removePhoneNumber(oldPhoneNumber);
-        addPhoneNumber(newPhoneNumber);
-    }
-
-    void removePhoneNumber(String phoneNumber) {
-        if (phoneNumbers.contains(phoneNumber)) {
-            phoneNumbers.add(phoneNumber);
-        }
+    List<String> getPhoneNumbers() {
+        return phoneNumbers;
     }
 }
