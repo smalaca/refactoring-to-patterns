@@ -12,6 +12,11 @@ class Account {
         this.accountNumber = accountNumber;
     }
 
+    Money withdrawAndGetBalance(Money money) {
+        money = getMoney().sub(money);
+        return getBalance();
+    }
+
     Money getBalance() {
         Money temp = getDebit().add(getMoney());
         temp = temp.sub(getBlocked());
