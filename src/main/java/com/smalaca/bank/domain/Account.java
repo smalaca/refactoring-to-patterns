@@ -4,6 +4,8 @@ class Account {
     private Money debit;
     private Money money;
     private Money blocked;
+    private Client client;
+    private ClientType clientType;
 
     Money getBalance() {
         Money temp = getDebit().add(getMoney());
