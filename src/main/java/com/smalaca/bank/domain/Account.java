@@ -6,6 +6,11 @@ class Account {
     private Money blocked;
     private Client client;
     private ClientType clientType;
+    private final AccountNumber accountNumber;
+
+    Account(AccountNumber accountNumber) {
+        this.accountNumber = accountNumber;
+    }
 
     Money getBalance() {
         Money temp = getDebit().add(getMoney());
