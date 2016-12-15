@@ -19,6 +19,18 @@ class Account {
         return temp;
     }
 
+    boolean hasAvailableMoney() {
+        if (getMoney().empty()) {
+            return false;
+        }
+
+        if (getMoney().sub(getBlocked()).empty()) {
+            return false;
+        }
+
+        return true;
+    }
+
     Money getDebit() {
         return debit;
     }

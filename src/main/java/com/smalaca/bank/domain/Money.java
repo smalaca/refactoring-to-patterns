@@ -14,4 +14,8 @@ public class Money {
     public Money sub(Money money) {
         return new Money(amount - money.amount);
     }
+
+    public boolean empty() {
+        return false;
+    }
 }
