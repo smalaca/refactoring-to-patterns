@@ -6,7 +6,7 @@ import com.smalaca.domain.OutputParameter;
 public class ConcreteProcessor3 implements Processor {
     @Override
     public boolean isApplicableFor(InputParameter inputParameter) {
-        return false;
+        return true;
     }
 
     @Override

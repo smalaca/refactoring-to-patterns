@@ -1,21 +1,24 @@
 package com.smalaca.processors;
 
 import com.smalaca.domain.InputParameter;
+import com.smalaca.domain.OutputParameter;
 
 import java.util.List;
 
-class VoidProcessorManager {
+class ReturnProcessorManager {
     private final List<Processor> processors;
 
-    VoidProcessorManager(List<Processor> processors) {
+    ReturnProcessorManager(List<Processor> processors) {
         this.processors = processors;
     }
 
-    void process(InputParameter inputParameter) {
+    OutputParameter process(InputParameter inputParameter) {
         for (Processor processor : processors) {
             if (processor.isApplicableFor(inputParameter)) {
-                processor.process(inputParameter);
+                return processor.process(inputParameter);
             }
         }
+
+        return null;
     }
 }

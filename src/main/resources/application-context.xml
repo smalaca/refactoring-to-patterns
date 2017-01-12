@@ -26,4 +26,14 @@
         </constructor-arg>
     </bean>
 
+    <bean id="returnProcessorManager" class="com.smalaca.processors.ReturnProcessorManager">
+        <constructor-arg>
+            <list>
+                <!-- order of the elements in the list is significant -->
+                <bean class="com.smalaca.processors.ConcreteProcessor1"/>
+                <bean class="com.smalaca.processors.ConcreteProcessor2"/>
+                <bean class="com.smalaca.processors.ConcreteProcessor3"/>
+            </list>
+        </constructor-arg>
+    </bean>
 </beans>
