@@ -1,4 +1,4 @@
-package com.smalaca.processors.complex;
+package com.smalaca.designpatterns.chainofresponsibility.processors.complex;
 
 import com.smalaca.domain.InputParameter;
 import org.junit.Test;

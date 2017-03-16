@@ -1,12 +1,12 @@
-package com.smalaca.processors;
+package com.smalaca.designpatterns.chainofresponsibility.processors;
 
 import com.smalaca.domain.InputParameter;
 import com.smalaca.domain.OutputParameter;
 
-public class ConcreteProcessor3 implements Processor {
+public class ConcreteProcessor1 implements Processor {
     @Override
     public boolean isApplicableFor(InputParameter inputParameter) {
-        return true;
+        return false;
     }
 
     @Override

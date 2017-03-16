@@ -4,35 +4,35 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
 	   					   http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="voidProcessorManager" class="com.smalaca.processors.VoidProcessorManager">
+    <bean id="voidProcessorManager" class="VoidProcessorManager">
         <constructor-arg>
             <list>
                 <!-- order of the elements in the list is significant -->
-                <bean class="com.smalaca.processors.ConcreteProcessor1"/>
-                <bean class="com.smalaca.processors.ConcreteProcessor2"/>
-                <bean class="com.smalaca.processors.ConcreteProcessor3"/>
+                <bean class="com.smalaca.designpatterns.chainofresponsibility.processors.ConcreteProcessor1"/>
+                <bean class="com.smalaca.designpatterns.chainofresponsibility.processors.ConcreteProcessor2"/>
+                <bean class="com.smalaca.designpatterns.chainofresponsibility.processors.ConcreteProcessor3"/>
             </list>
         </constructor-arg>
     </bean>
 
-    <bean id="breakProcessorManager" class="com.smalaca.processors.BreakProcessorManager">
+    <bean id="breakProcessorManager" class="BreakProcessorManager">
         <constructor-arg>
             <list>
                 <!-- order of the elements in the list is significant -->
-                <bean class="com.smalaca.processors.ConcreteProcessor1"/>
-                <bean class="com.smalaca.processors.ConcreteProcessor2"/>
-                <bean class="com.smalaca.processors.ConcreteProcessor3"/>
+                <bean class="com.smalaca.designpatterns.chainofresponsibility.processors.ConcreteProcessor1"/>
+                <bean class="com.smalaca.designpatterns.chainofresponsibility.processors.ConcreteProcessor2"/>
+                <bean class="com.smalaca.designpatterns.chainofresponsibility.processors.ConcreteProcessor3"/>
             </list>
         </constructor-arg>
     </bean>
 
-    <bean id="returnProcessorManager" class="com.smalaca.processors.ReturnProcessorManager">
+    <bean id="returnProcessorManager" class="ReturnProcessorManager">
         <constructor-arg>
             <list>
                 <!-- order of the elements in the list is significant -->
-                <bean class="com.smalaca.processors.ConcreteProcessor1"/>
-                <bean class="com.smalaca.processors.ConcreteProcessor2"/>
-                <bean class="com.smalaca.processors.ConcreteProcessor3"/>
+                <bean class="com.smalaca.designpatterns.chainofresponsibility.processors.ConcreteProcessor1"/>
+                <bean class="com.smalaca.designpatterns.chainofresponsibility.processors.ConcreteProcessor2"/>
+                <bean class="com.smalaca.designpatterns.chainofresponsibility.processors.ConcreteProcessor3"/>
             </list>
         </constructor-arg>
     </bean>
