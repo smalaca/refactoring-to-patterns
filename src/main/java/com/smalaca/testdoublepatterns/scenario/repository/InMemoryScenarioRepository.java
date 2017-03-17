@@ -15,7 +15,7 @@ public class InMemoryScenarioRepository implements ScenarioRepository {
 
     @Override
     public void store(Scenario scenario, Author author) {
-        if (scenarios.containsKey(author)) {
+        if (!scenarios.containsKey(author)) {
             scenarios.put(author, new ArrayList<>());
         }
 
