@@ -1,7 +1,7 @@
-package com.smalaca.domain;
+package com.smalaca.testdoublepatterns.scenario.domain;
 
-import static com.smalaca.domain.SuiteState.COMPLETED;
-import static com.smalaca.domain.SuiteState.CREATED;
+import static com.smalaca.testdoublepatterns.scenario.domain.SuiteState.COMPLETED;
+import static com.smalaca.testdoublepatterns.scenario.domain.SuiteState.CREATED;
 
 public class Scenario {
     private boolean approved = false;

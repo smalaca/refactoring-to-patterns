@@ -1,6 +1,6 @@
-package com.smalaca.tests.scenario.externalservice;
+package com.smalaca.testdoublepatterns.scenario.externalservice;
 
-import com.smalaca.domain.Scenario;
+import com.smalaca.testdoublepatterns.scenario.domain.Scenario;
 
 public class ExternalScenarioValidator {
     public boolean isValid(Scenario scenario) {

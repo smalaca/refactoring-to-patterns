@@ -1,9 +1,9 @@
-package com.smalaca.tests.scenario;
+package com.smalaca.testdoublepatterns.scenario;
 
-import com.smalaca.domain.Author;
-import com.smalaca.domain.Scenario;
-import com.smalaca.tests.scenario.externalservice.ExternalScenarioValidator;
-import com.smalaca.tests.scenario.repository.ScenarioRepository;
+import com.smalaca.testdoublepatterns.scenario.domain.Author;
+import com.smalaca.testdoublepatterns.scenario.domain.Scenario;
+import com.smalaca.testdoublepatterns.scenario.externalservice.ExternalScenarioValidator;
+import com.smalaca.testdoublepatterns.scenario.repository.ScenarioRepository;
 
 import java.util.List;
 
