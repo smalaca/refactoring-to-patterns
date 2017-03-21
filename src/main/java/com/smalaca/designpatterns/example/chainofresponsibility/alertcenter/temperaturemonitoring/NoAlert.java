@@ -5,10 +5,10 @@ import com.smalaca.designpatterns.example.chainofresponsibility.alertcenter.doma
 class NoAlert implements TemperatureControl {
     @Override
     public void reactOn(Temperature temperature) {
-        nothingToBeScaryAbout();
+        keepMonitoring();
     }
 
-    private void nothingToBeScaryAbout() {
+    private void keepMonitoring() {
 
     }
 }
