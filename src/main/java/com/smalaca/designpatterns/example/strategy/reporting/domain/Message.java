@@ -1,4 +1,4 @@
-package com.smalaca.designpatterns.example.strategy.message.domain;
+package com.smalaca.designpatterns.example.strategy.reporting.domain;
 
 import java.util.ArrayList;
 import java.util.List;

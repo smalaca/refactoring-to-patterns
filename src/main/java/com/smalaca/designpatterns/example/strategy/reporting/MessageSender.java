@@ -1,10 +1,10 @@
-package com.smalaca.designpatterns.example.strategy.message;
+package com.smalaca.designpatterns.example.strategy.reporting;
 
-import com.smalaca.designpatterns.example.strategy.message.domain.InputData;
-import com.smalaca.designpatterns.example.strategy.message.domain.Message;
-import com.smalaca.designpatterns.example.strategy.message.domain.Receiver;
-import com.smalaca.designpatterns.example.strategy.message.report.generator.ReportGenerator;
-import com.smalaca.designpatterns.example.strategy.message.mail.MailClient;
+import com.smalaca.designpatterns.example.strategy.reporting.domain.InputData;
+import com.smalaca.designpatterns.example.strategy.reporting.domain.Message;
+import com.smalaca.designpatterns.example.strategy.reporting.domain.Receiver;
+import com.smalaca.designpatterns.example.strategy.reporting.report.generator.ReportGenerator;
+import com.smalaca.designpatterns.example.strategy.reporting.mail.MailClient;
 
 class MessageSender {
     private final MailClient mailClient;

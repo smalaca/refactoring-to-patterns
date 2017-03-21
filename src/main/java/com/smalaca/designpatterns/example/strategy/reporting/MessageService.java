@@ -1,9 +1,9 @@
-package com.smalaca.designpatterns.example.strategy.message;
+package com.smalaca.designpatterns.example.strategy.reporting;
 
-import com.smalaca.designpatterns.example.strategy.message.domain.ReportType;
-import com.smalaca.designpatterns.example.strategy.message.domain.Request;
-import com.smalaca.designpatterns.example.strategy.message.report.generator.ReportGenerator;
-import com.smalaca.designpatterns.example.strategy.message.report.generator.ReportGenerators;
+import com.smalaca.designpatterns.example.strategy.reporting.domain.ReportType;
+import com.smalaca.designpatterns.example.strategy.reporting.domain.Request;
+import com.smalaca.designpatterns.example.strategy.reporting.report.generator.ReportGenerator;
+import com.smalaca.designpatterns.example.strategy.reporting.report.generator.ReportGenerators;
 
 import java.util.Map;
 

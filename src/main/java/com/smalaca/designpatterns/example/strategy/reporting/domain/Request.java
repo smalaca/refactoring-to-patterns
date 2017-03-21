@@ -1,4 +1,4 @@
-package com.smalaca.designpatterns.example.strategy.message.domain;
+package com.smalaca.designpatterns.example.strategy.reporting.domain;
 
 public interface Request {
     ReportType reportType();
