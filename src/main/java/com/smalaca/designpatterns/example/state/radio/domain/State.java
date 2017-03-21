@@ -1,4 +1,4 @@
-package com.smalaca.state.radio.domain;
+package com.smalaca.designpatterns.example.state.radio.domain;
 
 enum State {
     STAND_BY {

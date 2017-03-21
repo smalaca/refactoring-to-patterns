@@ -1,4 +1,4 @@
-package com.smalaca.state.day.domain;
+package com.smalaca.designpatterns.example.state.day.domain;
 
 enum DayPart {
     MORNING {

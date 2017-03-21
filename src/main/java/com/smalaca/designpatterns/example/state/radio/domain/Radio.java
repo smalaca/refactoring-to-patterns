@@ -1,4 +1,4 @@
-package com.smalaca.state.radio.domain;
+package com.smalaca.designpatterns.example.state.radio.domain;
 
 public class Radio {
     private State state;
