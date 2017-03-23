@@ -31,7 +31,7 @@ class ExtremelyLowTemperatureAlert implements TemperatureControl {
     }
 
     private void increaseHeating() {
-        thermostat.increaseTemperator();
+        thermostat.increaseTemperature();
     }
 
     private void orderLotOfHotTee() {
