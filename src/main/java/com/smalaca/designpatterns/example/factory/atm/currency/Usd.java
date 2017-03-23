@@ -1,9 +1,9 @@
 package com.smalaca.designpatterns.example.factory.atm.currency;
 
-class Usd implements Currency {
+public class Usd {
     private final int amount;
 
-    Usd(int amount) {
+    public Usd(int amount) {
         this.amount = amount;
     }
 }

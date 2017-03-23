@@ -1,35 +1,41 @@
 package com.smalaca.designpatterns.example.factory.atm;
 
-import com.smalaca.designpatterns.example.factory.atm.currency.Currency;
-
-import static com.smalaca.designpatterns.example.factory.atm.currency.Currencies.euro;
-import static com.smalaca.designpatterns.example.factory.atm.currency.Currencies.pln;
-import static com.smalaca.designpatterns.example.factory.atm.currency.Currencies.usd;
+import com.smalaca.designpatterns.example.factory.atm.currency.Euro;
+import com.smalaca.designpatterns.example.factory.atm.currency.Pln;
+import com.smalaca.designpatterns.example.factory.atm.currency.Usd;
 
 class Atm {
-    Currency withdrawEuro(int amount) {
+    Euro withdrawEuro(int amount) {
         checkBalanceFor(amount);
-        Currency euro = euro(amount);
+        Euro euro = new Euro(amount);
         return withdraw(euro);
     }
 
-    Currency withdrawPln(int amount) {
+    private Euro withdraw(Euro euro) {
+        return null;
+    }
+
+    Pln withdrawPln(int amount) {
         checkBalanceFor(amount);
-        Currency pln = pln(amount);
+        Pln pln = new Pln(amount);
         return withdraw(pln);
     }
 
-    Currency withdrawUsd(int amount) {
+    private Pln withdraw(Pln pln) {
+        return null;
+    }
+
+    Usd withdrawUsd(int amount) {
         checkBalanceFor(amount);
-        Currency usd = usd(amount);
+        Usd usd = new Usd(amount);
         return withdraw(usd);
+    }
+
+    private Usd withdraw(Usd usd) {
+        return null;
     }
 
     private void checkBalanceFor(int amount) {
 
-    }
-
-    private Currency withdraw(Currency currency) {
-        return null;
     }
 }
