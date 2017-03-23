@@ -10,4 +10,8 @@ public class Temperature {
     public boolean lowerThan(Temperature temperature) {
         return value < temperature.value;
     }
+
+    public boolean higherThan(Temperature temperature) {
+        return value > temperature.value;
+    }
 }
