@@ -29,7 +29,7 @@ class Atm {
 
     }
 
-    private Currency withdraw(Currency usd) {
+    private Currency withdraw(Currency currency) {
         return null;
     }
 }
