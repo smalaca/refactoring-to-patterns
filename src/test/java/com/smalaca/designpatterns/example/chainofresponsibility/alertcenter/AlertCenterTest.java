@@ -34,7 +34,7 @@ public class AlertCenterTest {
 
     @Before
     public void initAlertCenter() {
-        alertCenter = new AlertCenter(temperatureMonitoringCenter, thermostat, shop, fridge, fan);
+        alertCenter = new AlertCenterFactory(temperatureMonitoringCenter, thermostat, shop, fridge, fan).anAlertCenter();
     }
 
     @Test
