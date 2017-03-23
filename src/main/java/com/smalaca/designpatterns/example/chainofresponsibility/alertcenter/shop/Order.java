@@ -10,4 +10,8 @@ public class Order {
     public static Order anOrder(Products product) {
         return new Order(product);
     }
+
+    public Products getProduct() {
+        return product;
+    }
 }
