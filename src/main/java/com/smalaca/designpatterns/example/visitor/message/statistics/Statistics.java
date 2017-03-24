@@ -15,7 +15,7 @@ public class Statistics {
 
     void gather(Message message) {
         message.accept(statisticsAnalyzer);
-        Statistic statistic = statisticsAnalyzer.getLast();
+        Statistic statistic = statisticsAnalyzer.getStatistics();
         statisticsRepository.store(statistic);
     }
 }

@@ -34,7 +34,7 @@ class StatisticsAnalyzer implements Visitor {
 
     }
 
-    Statistic getLast() {
+    Statistic getStatistics() {
         return null;
     }
 }
