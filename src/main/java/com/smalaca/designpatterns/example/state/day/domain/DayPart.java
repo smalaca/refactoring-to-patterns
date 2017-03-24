@@ -16,10 +16,10 @@ enum DayPart {
     EVENING {
         @Override
         DayPart next() {
-            return NIGHTIME;
+            return NIGHTTIME;
         }
     },
-    NIGHTIME {
+    NIGHTTIME {
         @Override
         DayPart next() {
             return MORNING;
