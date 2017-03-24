@@ -9,7 +9,7 @@ enum State {
             } else {
                 radio.startWith(RadioStations.random());
             }
-            radio.setState(PLAYING);
+            radio.changeStateTo(PLAYING);
         }
     },
     PLAYING {
@@ -17,7 +17,7 @@ enum State {
         void play(Radio radio) {
             radio.rememberPlayedRadioStation();
             radio.stop();
-            radio.setState(STAND_BY);
+            radio.changeStateTo(STAND_BY);
         }
     };
 

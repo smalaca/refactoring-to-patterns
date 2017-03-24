@@ -9,7 +9,7 @@ public class Radio {
         state.play(this);
     }
 
-    void setState(State state) {
+    void changeStateTo(State state) {
         this.state = state;
     }
 
