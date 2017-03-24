@@ -1,35 +1,54 @@
 package com.smalaca.designpatterns.example.state.radio.domain;
 
+import static com.smalaca.designpatterns.example.state.radio.domain.State.PLAYING;
+import static com.smalaca.designpatterns.example.state.radio.domain.State.STAND_BY;
+
 public class Radio {
     private State state;
     private RadioStation lastPlayed;
     private RadioStation playing;
 
     public void play() {
-        state.play(this);
+        switch (state) {
+            case STAND_BY:
+                if (hasLastPlayedRadioStation()) {
+                    startWithLastPlayed();
+                } else {
+                    startWith(RadioStations.random());
+                }
+
+                changeStateTo(PLAYING);
+                break;
+
+            case PLAYING:
+                rememberPlayedRadioStation();
+                stop();
+                changeStateTo(STAND_BY);
+                break;
+        }
     }
 
-    void changeStateTo(State state) {
+    private void changeStateTo(State state) {
         this.state = state;
     }
 
-    void startWith(RadioStation radioStation) {
+    private void startWith(RadioStation radioStation) {
 
     }
 
-    void startWithLastPlayed() {
+    private void startWithLastPlayed() {
         playing = lastPlayed;
     }
 
-    void rememberPlayedRadioStation() {
+    private void rememberPlayedRadioStation() {
         lastPlayed = playing;
     }
 
-    void stop() {
+    private void stop() {
         playing = null;
     }
 
-    boolean hasLastPlayedRadioStation() {
+    private boolean hasLastPlayedRadioStation() {
         return lastPlayed != null;
     }
 }
