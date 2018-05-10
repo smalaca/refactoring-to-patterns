@@ -29,4 +29,8 @@ public class ClassCode {
     public long getComplexity() {
         return complexity;
     }
+
+    public boolean isComplexOrUnreadable() {
+        return isComplex() || isUnreadable();
+    }
 }
