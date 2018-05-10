@@ -4,6 +4,7 @@ public class ClassCode {
     private boolean complex;
     private boolean unreadable;
     private boolean improved;
+    private long complexity;
 
     public ClassMethod getMethodByName(RefactoringScope scope) {
         return null;
@@ -21,11 +22,11 @@ public class ClassCode {
 
     }
 
-    public boolean lessComplexThan(ClassCode classCode) {
-        return false;
-    }
-
     public void apply(Refactoring refactoring) {
 
+    }
+
+    public long getComplexity() {
+        return complexity;
     }
 }

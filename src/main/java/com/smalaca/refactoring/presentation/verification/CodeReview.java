@@ -14,7 +14,7 @@ class CodeReview {
     private NotificationService notificationService;
 
     void doReviewOf(ClassCode currentCode, CodeDelta change) {
-        if (codeCoverage.check(change) > 97 && change.getClassCode().lessComplexThan(currentCode)) {
+        if (codeCoverage.check(change) > 97 && change.getClassCode().getComplexity() < currentCode.getComplexity()) {
             currentCode.apply(change.getRefactoring());
             codeBase.merge(currentCode);
             history.store(change.getAuthor(), change.getClassCode(), change.getRefactoring());
